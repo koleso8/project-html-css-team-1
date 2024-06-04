@@ -72,29 +72,34 @@ img {
 }
 
 .container {
-  /* min-width: 320px; */
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
 
-  display: flex;
-  justify-content: center;
-  /* background-color: aqua; */
+  /* background-color: aqua;
+  height: 20px; */
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 355px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 720px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1280px;
-    padding-left: 65px;
-    padding-right: 65px;
+    max-width: 1174px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
