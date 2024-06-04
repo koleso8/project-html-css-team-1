@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/project-html-css-team-1/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-html-css-team-1/assets/index-8e58e3ed.css">
+    <link rel="stylesheet" href="/project-html-css-team-1/assets/index-565e3083.css">
   </head>
   <body>
     <header>
@@ -25,7 +25,77 @@
 
     <main>
       <section class="hero">
-  <div class="container"></div>
+  <div class="container">
+    <div class="hero-container">
+      <div class="hero-text-wrapper">
+        <h1 class="hero-title">
+          Welcome to our <span class="hero-title-accent">collection</span> of
+          premium watches
+        </h1>
+        <p class="hero-text">
+          Our watches are not just timepieces, but also an expression of your
+          personality and lifestyle. From classic designs to modern ones, we
+          have a watch to suit every taste and occasion.
+        </p>
+      </div>
+      <div class="hero-scroll-wrapper">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-html-css-team-1/assets/hero_scroll_desktop-004f2bdd.png 1x, /project-html-css-team-1/assets/hero_scroll_desktop@2x-860f413e.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-html-css-team-1/assets/hero_scroll_tablet-9bd288aa.png 1x, /project-html-css-team-1/assets/hero_scroll_tablet@2x-6f46c763.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-html-css-team-1/assets/hero_scroll-cd5cc1e6.png 1x, /project-html-css-team-1/assets/hero_scroll@2x-bb04b079.png 2x"
+            type="image/png"
+          />
+          <img
+            src="../images/hero/hero_scroll.png"
+            alt="team"
+            width="108"
+            height="44"
+            class="hero-team-img"
+          />
+        </picture>
+        <a href="#footer" class="hero-link">Scroll down</a>
+      </div>
+    </div>
+
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/hero/hero_watch_desktop.jpg     1x,
+          ../images/hero/hero_watch_desktop@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/project-html-css-team-1/assets/hero_watch_tablet-0215696d.jpg 1x, /project-html-css-team-1/assets/hero_watch_tablet@2x-613a00de.jpg 2x"
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="/project-html-css-team-1/assets/hero_watch-b4997286.jpg 1x, /project-html-css-team-1/assets/hero_watch@2x-49bb9376.jpg 2x"
+        type="image/jpg"
+      />
+
+      <img
+        src="./images/mob-3.jpg"
+        alt="watches"
+        width="335"
+        height="366"
+        class="hero-watches-img"
+      />
+    </picture>
+  </div>
 </section>
 
       <!-- https://github.com/anna-vasylenko -->
