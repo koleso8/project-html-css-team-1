@@ -1,11 +1,30 @@
 @import url('./fonts.css');
+
 @import url('./reset.css');
+
 @import url('./1-header.css');
+/* https://github.com/dimahutsol */
+
 @import url('./2-hero.css');
+/* https://github.com/anna-vasylenko */
+
 @import url('./3-about-us.css');
+/* https://github.com/IegorIgnatii */
+
 @import url('./4-catalog.css');
+/* https://github.com/juliaparamonova */
+
 @import url('./5-advertisement.css');
+/* https://github.com/koleso8 */
+
 @import url('./6-sale.css');
+/* Микола */
+
 @import url('./7-reviews.css');
+/* https://github.com/anna-vasylenko */
+
 @import url('./8-contact-us.css');
+/* https://github.com/gramatchi */
+
 @import url('./9-footer.css');
+/* https://github.com/pinulartem24 */

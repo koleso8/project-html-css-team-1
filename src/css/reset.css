@@ -1,4 +1,18 @@
 /* Reset styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #0c0c0c;
+  --accent: #3350e9;
+  --background: #fbfbfb;
+  --cards: #f3f3f3;
+}
+
 h1,
 h2,
 h3,
@@ -9,6 +23,7 @@ p {
   margin: 0;
 }
 
+ol,
 ul {
   margin: 0;
   padding: 0;
@@ -16,8 +31,14 @@ ul {
 }
 
 a {
+  font-family: inherit;
   color: currentColor;
   text-decoration: none;
+  margin: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 button {
@@ -31,11 +52,20 @@ img {
   height: auto;
 }
 
+.body {
+  background-color: var(--background);
+}
+
 .container {
+  /* min-width: 320px; */
   max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
 }
 
 @media screen and (min-width: 768px) {
