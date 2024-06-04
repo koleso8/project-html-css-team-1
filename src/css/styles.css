@@ -1,25 +1,11 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+@import url('./fonts.css');
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import url('./1-header.css');
+@import url('./2-hero.css');
+@import url('./3-about-us.css');
+@import url('./4-catalog.css');
+@import url('./5-advertisement.css');
+@import url('./6-sale.css');
+@import url('./7-reviews.css');
+@import url('./8-contact-us.css');
+@import url('./9-footer.css');
