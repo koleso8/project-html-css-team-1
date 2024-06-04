@@ -1,0 +1,130 @@
+.hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--main);
+
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 70px;
+    line-height: 0.875;
+    max-width: 557px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 72px;
+    max-width: 597px;
+  }
+}
+
+.hero-title-accent {
+  color: var(--accent);
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  margin-bottom: 28px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 480px;
+    margin-bottom: 40px;
+  }
+}
+
+.hero-scroll-wrapper {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-scroll-wrapper {
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+}
+
+.hero-team-img {
+  width: 108px;
+  height: 44px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-team-img {
+    width: 136px;
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-team-img {
+    width: 146px;
+  }
+}
+
+.hero-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  color: var(--main);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-link {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
