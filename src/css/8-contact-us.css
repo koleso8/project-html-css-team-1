@@ -2,7 +2,23 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.container {
+@media only screen and (min-width: 768px) {
+  .contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact-container {
+    display: flex;
+    gap: 40px;
+  }
 }
 .contact-title {
   font-weight: 600;
@@ -12,11 +28,34 @@
   color: var(--main);
   margin-bottom: 24px;
 }
+@media only screen and (min-width: 768px) {
+  .contact-title {
+    font-size: 32px;
+    line-height: 0.91667;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact-title {
+    font-size: 48px;
+  }
+}
 .contact-modal {
   border-radius: 30px;
   max-width: 100%;
-  height: 512px;
+  min-height: 512px;
   background-color: var(--background);
+}
+@media only screen and (min-width: 768px) {
+  .contact-modal {
+    min-height: 556px;
+    border-radius: 50px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact-modal {
+    width: 580px;
+  }
 }
 .contact-text {
   font-weight: 500;
@@ -28,29 +67,64 @@
   padding-left: 28px;
   padding-right: 28px;
 }
+@media only screen and (min-width: 768px) {
+  .contact-text {
+    padding-top: 50px;
+    padding-left: 122px;
+    padding-right: 122px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact-text {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 .contact-form {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
-  gap: 28px;
+  gap: 18px;
   padding: 48px 28px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    padding: 50px 122px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact-form {
+    padding: 32px 60px;
+  }
 }
 .contact-input-container {
 }
-.contact-input-name {
+
+.contact-input-field {
   background-color: transparent;
   border: 1px solid rgba(12, 12, 12, 0.15);
   border-radius: 12px;
-  padding: 12px 226px 12px 14px;
-  width: 279px;
+  padding: 12px 14px 12px 14px;
   height: 42px;
+  width: 100%;
 }
-.contact-input-name:focus {
-  border-color: #3350e9;
+@media only screen and (min-width: 768px) {
+  .contact-input-field {
+    padding: 16px 18px 16px 18px;
+    min-width: 460px;
+    height: 52px;
+  }
 }
-.contact-input-name:valid {
-  border-color: #3350e9;
+
+.contact-input-field:focus {
+  border-color: var(--accent);
+}
+.contact-input-field:hover {
+  border-color: var(--accent);
+}
+.contact-input-field:valid {
+  border-color: var(--accent);
 }
 input::placeholder {
   color: var(--main);
@@ -58,32 +132,45 @@ input::placeholder {
   font-size: 14px;
   line-height: 1.28571;
 }
-
-.contact-input-email {
-  background-color: transparent;
-  border: 1px solid rgba(12, 12, 12, 0.15);
-  border-radius: 12px;
-  padding: 12px 226px 12px 14px;
-  width: 279px;
-  height: 42px;
+@media only screen and (min-width: 768px) {
+  .input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
-.contact-input-tel {
-  background-color: transparent;
-  border: 1px solid rgba(12, 12, 12, 0.15);
-  border-radius: 12px;
-  padding: 12px 226px 12px 14px;
-  width: 279px;
-  height: 42px;
+
+textarea::placeholder {
+  color: var(--main);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
 }
 .contact-comment-input {
   background-color: transparent;
   border: 1px solid rgba(12, 12, 12, 0.15);
   border-radius: 12px;
-  padding: 12px 136px 54px 14px;
-  width: 279px;
+  padding: 12px 14px 54px 14px;
+  width: 100%;
   height: 84px;
-  resize: none;
   scroll-behavior: unset;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .contact-comment-input {
+    padding: 16px 18px 16px 18px;
+    min-width: 460px;
+    height: 90px;
+  }
+}
+.contact-input-comment:focus {
+  border-color: var(--accent);
+}
+.contact-input-comment:hover {
+  border-color: var(--accent);
+}
+.contact-input-comment:valid {
+  border-color: var(--accent);
 }
 .contact-modal-button {
   display: flex;
@@ -94,12 +181,21 @@ input::placeholder {
   padding: 12px 50px;
   width: 134px;
   height: 42px;
-  background-color: #3350e9;
+  background-color: var(--accent);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
   text-align: center;
   color: var(--background);
+  cursor: pointer;
+  border: none;
+}
+@media only screen and (min-width: 768px) {
+  .contact-modal-button {
+    padding: 17px 63px;
+    width: 160px;
+    height: 52px;
+  }
 }
 
 .contact-modal-button:hover,
@@ -109,5 +205,17 @@ input::placeholder {
 
 .contact-us-watches-img {
   border-radius: 30px;
-  padding-top: 20px;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-us-watches-img {
+    width: 794px;
+    border-radius: 50px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contact-us-watches-img {
+    width: 530px;
+  }
 }
