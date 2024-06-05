@@ -147,6 +147,12 @@ textarea::placeholder {
   font-size: 14px;
   line-height: 1.28571;
 }
+@media only screen and (min-width: 768px) {
+    textarea::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
 .contact-comment-input {
   background-color: transparent;
   border: 1px solid rgba(12, 12, 12, 0.15);
