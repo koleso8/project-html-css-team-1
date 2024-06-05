@@ -46,13 +46,20 @@ desktop padding:top 50px padding-bottom: 50px) */
   background-color: transparent;
 
   width: 160px;
-  min-height: 48px;
+  height: 48px;
   padding: 15px 0;
   border: none;
 
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
 }
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement@2x.png);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advertisement .container {
     background-image: url(../images/advertisement/advertisement-tablet.png);
@@ -65,43 +72,35 @@ desktop padding:top 50px padding-bottom: 50px) */
   }
   .advertisement-title {
     font-size: 48px;
+    width: 576px;
+
+    line-height: 0.91;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement-tablet@2x.png);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .advertisement .container {
     background-image: url(../images/advertisement/advertisement-desktop.png);
+    max-width: 1150px;
+    max-height: 298px;
+
+    flex-direction: row;
+    padding: 80px 80px;
+  }
+
+  .advertisement-title {
+    width: 690px;
   }
 }
 
-/* #region media 2x */
-
-@media screen and (max-width: 767px),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .advertisement .container {
-    background-image: url(../images/advertisement/advertisement@2x.png);
-  }
-}
-
-@media screen and (min-width: 768px),
-  (max-width: 1279px),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .advertisement .container {
-    background-image: url(../images/advertisement/advertisement-tablet@2x.png);
-  }
-}
-
-@media screen and (min-width: 1280px),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .advertisement .container {
     background-image: url(../images/advertisement/advertisement-desktop@2x.png);
   }
 }
-
-/* #endregion media 2x */
