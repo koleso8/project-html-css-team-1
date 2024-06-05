@@ -82,7 +82,7 @@
 }
 
 .header-nav-link {
-  padding: 26px 0;
+  padding: 12px 0;
 }
 
 .header-nav-item-active::after {
@@ -273,6 +273,10 @@
 
   .header-nav-item {
     color: var(--main);
+  }
+
+  .header-nav-link {
+    padding: 26px 0;
   }
 
   .header-nav-item-active {
