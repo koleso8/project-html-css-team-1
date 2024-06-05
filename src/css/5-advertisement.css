@@ -29,52 +29,6 @@ desktop padding:top 50px padding-bottom: 50px) */
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 767px) {
-  .advertisement .container {
-    background-image: url(../images/advertisement/advertisement@2x.png);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advertisement .container {
-    background-image: url(../images/advertisement/advertisement-tablet@2x.png);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .advertisement .container {
-    background-image: url(../images/advertisement/advertisement-desktop@2x.png);
-  }
-}
-
-/* #region media 2x */
-
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .advertisement .container {
-    background-image: url(../images/advertisement/advertisement@2x.png);
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .advertisement .container {
-    background-image: url(../images/advertisement/advertisement-tablet@2x.png);
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .advertisement .container {
-    background-image: url(../images/advertisement/advertisement-desktop@2x.png);
-  }
-}
-
-/* #endregion media 2x */
-
 .advertisement-title {
   font-weight: 600;
   font-size: 32px;
@@ -99,3 +53,55 @@ desktop padding:top 50px padding-bottom: 50px) */
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
 }
+@media screen and (min-width: 768px) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement-tablet.png);
+    max-width: 704px;
+    max-height: 425px;
+
+    gap: 32px;
+
+    padding: 80px 64px;
+  }
+  .advertisement-title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement-desktop.png);
+  }
+}
+
+/* #region media 2x */
+
+@media screen and (max-width: 767px),
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px),
+  (max-width: 1279px),
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement-tablet@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px),
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement-desktop@2x.png);
+  }
+}
+
+/* #endregion media 2x */
