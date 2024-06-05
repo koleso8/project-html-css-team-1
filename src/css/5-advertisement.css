@@ -52,6 +52,9 @@ desktop padding:top 50px padding-bottom: 50px) */
 
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
+
+  transition: background-color 275ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 275ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advertisement-btn:hover,
