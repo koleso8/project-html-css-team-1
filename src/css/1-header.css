@@ -1,5 +1,15 @@
 .header {
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: transform 200ms linear;
+}
+
+.header.hide {
+  transform: translateY(-100%);
 }
 
 .header-container {

@@ -40,6 +40,8 @@ function checkBlocksVisibility() {
 checkBlocksVisibility();
 
 window.addEventListener('scroll', checkBlocksVisibility);
+//
+
 // Smooth scroll to anchor
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -74,4 +76,66 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+//
+
+// Header hide when scroll
+let lastScroll = 0;
+const defaultOffset = 60;
+const header = document.querySelector('.header');
+
+const scrollPosition = () =>
+  window.scrollY || document.documentElement.scrollTop;
+const containHide = () => header.classList.contains('hide');
+
+window.addEventListener('scroll', () => {
+  if (
+    scrollPosition() > lastScroll &&
+    !containHide() &&
+    scrollPosition() > defaultOffset
+  ) {
+    header.classList.add('hide');
+  } else if (scrollPosition() < lastScroll && containHide()) {
+    header.classList.remove('hide');
+  }
+
+  lastScroll = scrollPosition();
+});
+//
+
+// Header active nav-item
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.header-nav-item a');
+const offset = 100;
+
+const getActiveSection = () => {
+  let activeSection = null;
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= offset && rect.bottom >= offset) {
+      if (section.getAttribute('id')) {
+        activeSection = section;
+      }
+    }
+  });
+  return activeSection;
+};
+
+const setActiveNavLink = () => {
+  const activeSection = getActiveSection();
+  if (activeSection) {
+    const activeId = activeSection.getAttribute('id').toLowerCase();
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href').slice(1).toLowerCase();
+      if (href === activeId) {
+        link.parentElement.classList.add('header-nav-item-active');
+      } else {
+        link.parentElement.classList.remove('header-nav-item-active');
+      }
+    });
+  }
+};
+
+window.addEventListener('DOMContentLoaded', setActiveNavLink);
+window.addEventListener('scroll', setActiveNavLink);
 //
