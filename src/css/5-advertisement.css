@@ -1,0 +1,106 @@
+.advertisement {
+  padding: 30px 10px;
+}
+
+/* padding на секціі задаємо 50% між секціями
+ ( тобто для 
+mobile padding:top 30px padding-bottom: 30px
+tablet padding:top 40px padding-bottom: 40px
+desktop padding:top 50px padding-bottom: 50px) */
+
+.advertisement .container {
+  padding: 60px 28px;
+
+  border-radius: 30px;
+  width: 100%;
+
+  max-width: 335px;
+  max-height: 363px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+
+  background-color: #0c0c0c;
+  background-image: url(../images/advertisement/advertisement.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advertisement-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--background);
+}
+
+.advertisement-story {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-btn {
+  color: var(--background);
+  background-color: transparent;
+
+  width: 160px;
+  height: 48px;
+  padding: 15px 0;
+  border: none;
+
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement-tablet.png);
+    max-width: 704px;
+    max-height: 425px;
+
+    gap: 32px;
+
+    padding: 80px 64px;
+  }
+  .advertisement-title {
+    font-size: 48px;
+    width: 576px;
+
+    line-height: 0.91;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement-tablet@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement-desktop.png);
+    max-width: 1150px;
+    max-height: 298px;
+
+    flex-direction: row;
+    padding: 80px 80px;
+  }
+
+  .advertisement-title {
+    width: 690px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .advertisement .container {
+    background-image: url(../images/advertisement/advertisement-desktop@2x.png);
+  }
+}
