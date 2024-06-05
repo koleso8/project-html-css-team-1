@@ -1,0 +1,54 @@
+.advertisement {
+  padding: 30px 10px;
+}
+
+/* padding на секціі задаємо 50% між секціями
+ ( тобто для 
+mobile padding:top 30px padding-bottom: 30px
+tablet padding:top 40px padding-bottom: 40px
+desktop padding:top 50px padding-bottom: 50px) */
+
+.advertisement .container {
+  padding: 60px 28px;
+
+  border-radius: 30px;
+  width: 100%;
+
+  max-height: 363px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+
+  background-color: #0c0c0c;
+  background-image: url(../images/advertisement/advertisement_img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advertisement-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--background);
+}
+
+.advertisement-story {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-btn {
+  color: var(--background);
+  background-color: transparent;
+
+  width: 160px;
+  min-height: 48px;
+  padding: 15px 0;
+  border: none;
+
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+}
