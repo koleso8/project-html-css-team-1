@@ -42,7 +42,7 @@
   padding: 8px;
   width: 34px;
   height: 34px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 275ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: rgba(251, 251, 251, 0.8);
 }
 .footer-icon-link:hover,
@@ -57,8 +57,8 @@
   padding-top: 14px;
   padding-bottom: 14px;
   color: #fbfbfb;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 275ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 275ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-tel-link {
   text-align: center;
