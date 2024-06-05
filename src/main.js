@@ -1,6 +1,16 @@
 // Header menu
 const btnBurger = document.getElementsByClassName('header-burger')[0];
 const menu = document.getElementsByClassName('header-menu')[0];
+const menuLinks = document.getElementsByClassName('header-nav-link');
+const menuLinksArray = Array.from(menuLinks);
+
+menuLinksArray.forEach(link => {
+  link.addEventListener('click', function (event) {
+    document.body.classList.remove('body-prevent-scroll');
+    menu.classList.remove('header-menu-open');
+    btnBurger.classList.remove('header-burger-open');
+  });
+});
 
 btnBurger.addEventListener('click', function (event) {
   event.stopPropagation();
