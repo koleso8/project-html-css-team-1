@@ -1,3 +1,7 @@
+.body-prevent-scroll {
+  overflow-y: hidden;
+}
+
 .header {
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
 }
@@ -125,7 +129,7 @@
   width: 34px;
   height: 34px;
   padding: 0;
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
 }
