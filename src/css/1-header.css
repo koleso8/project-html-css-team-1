@@ -1,7 +1,3 @@
-.body-prevent-scroll {
-  overflow-y: hidden;
-}
-
 .header {
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
 }
