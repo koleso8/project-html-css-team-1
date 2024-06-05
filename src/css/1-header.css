@@ -1,6 +1,6 @@
 .header {
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
