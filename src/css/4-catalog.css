@@ -147,10 +147,11 @@
 @media screen and (min-width: 1280px) {
     .catalog-img {
         width: 292px;
+        height: 292px;
     }
 
     .catalog-item {
-        padding-top: 24px;
+        padding-top: 34px;
         width: calc((100% - 32px) / 3);
     }
 }
