@@ -6,6 +6,7 @@
   width: 100%;
   background-color: #fff;
   transition: transform 200ms linear;
+  z-index: 5;
 }
 
 .header.hide {
