@@ -149,3 +149,15 @@ const setActiveNavLink = () => {
 window.addEventListener('DOMContentLoaded', setActiveNavLink);
 window.addEventListener('scroll', setActiveNavLink);
 //
+// catalog
+
+const btnCatalog = document.getElementsByClassName('catalog-btn')[0];
+const imgCatalog5 = document.getElementsByClassName('catalog-item')[4];
+const imgCatalog6 = document.getElementsByClassName('catalog-item')[5];
+
+btnCatalog.addEventListener('click', function (event) {
+
+  imgCatalog5.classList.remove('catalog-item-hide');
+  imgCatalog6.classList.remove('catalog-item-hide');
+  btnCatalog.classList.add("catalog-btn-none");
+});
