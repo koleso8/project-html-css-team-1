@@ -1,3 +1,56 @@
 <section class="contact">
-  <div class="container"></div>
+  <div class="container">
+    <h2 class="contact-title">Contact Us</h2>
+    <div class="contact-modal">
+      <p class="contact-text">
+        Please use the form below to contact us. Enter your name, email, phone,
+        and message and we'll get back to you shortly.
+      </p>
+      <form class="contact-form">
+        <div class="contact-input-container">
+          <input
+            class="contact-input-name"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="contact-input-container">
+          <input
+            class="contact-input-email"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Email"
+            required
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+        </div>
+        <div class="contact-input-container">
+          <input
+            class="contact-input-tel"
+            type="tel"
+            id="user-tel"
+            name="user-tel"
+            placeholder="+380"
+            required
+            pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+          />
+        </div>
+        <div class="contact-input-container">
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            rows="3"
+            class="contact-comment-input"
+            placeholder="Comment"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="contact-modal-button">Send</button>
+      </form>
+    </div>
+  </div>
 </section>

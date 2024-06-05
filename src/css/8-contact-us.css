@@ -1,0 +1,81 @@
+.contact {
+}
+.container {
+}
+.contact-title {
+  font: 600 32px / 1 'Gilroy', sans-serif;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+.contact-modal {
+  border-radius: 30px;
+  padding: 48px 28px;
+  width: 335px;
+  height: 512px;
+  background-color: #f3f3f3;
+}
+.contact-text {
+  font: 500 14px / 1.28571 'Gilroy', sans-serif;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  margin-bottom: 28px;
+}
+.contact-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 28px;
+}
+.contact-input-container {
+}
+.contact-input-name {
+  background-color: transparent;
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  border-radius: 12px;
+  padding: 12px 226px 12px 14px;
+  width: 279px;
+  height: 42px;
+}
+
+.contact-input-email {
+  background-color: transparent;
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  border-radius: 12px;
+  padding: 12px 226px 12px 14px;
+  width: 279px;
+  height: 42px;
+}
+.contact-input-tel {
+  background-color: transparent;
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  border-radius: 12px;
+  padding: 12px 226px 12px 14px;
+  width: 279px;
+  height: 42px;
+}
+.contact-comment-input {
+  background-color: transparent;
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  border-radius: 12px;
+  padding: 12px 136px 54px 14px;
+  width: 279px;
+  height: 84px;
+  resize: none;
+  scroll-behavior: unset;
+}
+.contact-modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 16px;
+  padding: 12px 50px;
+  width: 134px;
+  height: 42px;
+  background-color: #3350e9;
+  font: 500 14px / 1.28571 'Gilroy', sans-serif;
+  text-align: center;
+  color: #fbfbfb;
+}
