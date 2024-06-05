@@ -54,6 +54,12 @@ desktop padding:top 50px padding-bottom: 50px) */
   border-radius: 16px;
 }
 
+.advertisement-btn:hover,
+.advertisement-btn:focus {
+  background-color: var(--background);
+  color: var(--main);
+}
+
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .advertisement .container {
     background-image: url(../images/advertisement/advertisement@2x.png);
