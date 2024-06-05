@@ -1,0 +1,128 @@
+.reviews {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--main);
+
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-title {
+    font-size: 48px;
+    line-height: 0.91;
+
+    margin-bottom: 40px;
+  }
+}
+
+.reviews-list {
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-list {
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews-list {
+    gap: 20px;
+  }
+}
+
+.review-card {
+  padding: 32px 36px;
+  border-radius: 30px;
+  background-color: var(--cards);
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-card {
+    width: calc((100% - 1 * 16px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .review-card {
+    width: calc((100% - 2 * 20px) / 3);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hide-on-mob {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .hide-on-tab {
+    display: none;
+  }
+}
+
+.review-img {
+  margin: 0 auto;
+
+  margin-bottom: 24px;
+}
+
+.review-text-wrapper {
+  text-align: center;
+}
+
+.review-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--main);
+
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-name {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+.review-dsc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(12, 12, 12, 0.4);
+}
+
+@media only screen and (min-width: 768px) {
+  .review-dsc {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
