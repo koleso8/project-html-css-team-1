@@ -44,7 +44,7 @@
   border-radius: 30px;
   max-width: 100%;
   min-height: 512px;
-  background-color: var(--background);
+  background-color: var(--card);
 }
 @media only screen and (min-width: 768px) {
   .contact-modal {
@@ -107,7 +107,7 @@
   padding: 12px 14px 12px 14px;
   height: 42px;
   width: 100%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 275ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
   .contact-input-field {
@@ -161,7 +161,7 @@ textarea::placeholder {
   scroll-behavior: unset;
   overflow-x: hidden;
   overflow-y: hidden;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 275ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
   .contact-comment-input {
@@ -196,7 +196,7 @@ textarea::placeholder {
   color: var(--background);
   cursor: pointer;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 275ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 10px;
 }
 @media only screen and (min-width: 768px) {

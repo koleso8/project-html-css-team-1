@@ -16,6 +16,7 @@
               name="user-name"
               placeholder="Name"
               required
+              aria-label="input field name"
             />
           </div>
           <div class="contact-input-container">
@@ -27,6 +28,7 @@
               placeholder="Email"
               required
               pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              aria-label="input field email"
             />
           </div>
           <div class="contact-input-container">
@@ -38,6 +40,7 @@
               placeholder="+380"
               required
               pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+              aria-label="input field telephone"
             />
           </div>
           <div class="contact-input-container">
@@ -48,9 +51,16 @@
               class="contact-comment-input"
               placeholder="Comment"
               required
+              aria-label="input field comment"
             ></textarea>
           </div>
-          <button type="submit" class="contact-modal-button">Send</button>
+          <button
+            type="submit"
+            aria-label="send button"
+            class="contact-modal-button"
+          >
+            Send
+          </button>
         </form>
       </div>
     </div>
