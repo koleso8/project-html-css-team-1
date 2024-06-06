@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/project-html-css-team-1/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-html-css-team-1/assets/index-ed3ee31a.css">
+    <link rel="stylesheet" href="/project-html-css-team-1/assets/index-59e261c3.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -440,8 +440,99 @@
 
       <!-- https://github.com/anna-vasylenko -->
 
-      <section class="contact">
-  <div class="container"></div>
+      <section class="contact section-animation" id="contact-us">
+  <div class="container contact-container">
+    <div class="contact-info">
+      <h2 class="contact-title">Contact Us</h2>
+      <div class="contact-modal">
+        <p class="contact-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <div class="contact-input-container">
+            <input
+              class="contact-input-field"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Name"
+              required
+              aria-label="input field name"
+            />
+          </div>
+          <div class="contact-input-container">
+            <input
+              class="contact-input-field"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Email"
+              required
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              aria-label="input field email"
+            />
+          </div>
+          <div class="contact-input-container">
+            <input
+              class="contact-input-field"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="+380"
+              required
+              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+              aria-label="input field telephone"
+            />
+          </div>
+          <div class="contact-input-container">
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              rows="4"
+              class="contact-comment-input"
+              placeholder="Comment"
+              required
+              aria-label="input field comment"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            aria-label="send button"
+            class="contact-modal-button"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="contact-picture">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="/project-html-css-team-1/assets/contact-us-clock-desktop-788403c0.jpg 1x, /project-html-css-team-1/assets/contact-us-clock-desktop@2x-2eb3d343.jpg 2x"
+          type="image/jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/project-html-css-team-1/assets/contact-us-clock-tablet-da9e8773.jpg 1x, /project-html-css-team-1/assets/contact-us-clock-tablet@2x-f660c521.jpg 2x"
+          type="image/jpg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/project-html-css-team-1/assets/contact-us-clock-ad394a09.jpg 1x, /project-html-css-team-1/assets/contact-us-clock@2x-3327b9e6.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          src="/project-html-css-team-1/assets/contact-us-clock-ad394a09.jpg"
+          alt="watches"
+          width="335"
+          height="446"
+          class="contact-us-watches-img"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
 
       <!-- https://github.com/gramatchi -->
