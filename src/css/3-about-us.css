@@ -50,11 +50,13 @@
     background-color: #1f3cd4;
 }
 
-.about-img {
+.about-img-div {
     background-color: gray;
     border-radius: 30px;
-    max-height: 532px;
-    min-height: 446px;
+}
+
+.about-img{
+    width: 100%;
 }
 
 
@@ -82,14 +84,13 @@
     }
 
     .about-welcome {
-        /* width: 52%; */
     }
 
     .about-btn {
         margin-top: 40px;
     }
 
-    .about-img {
+    .about-img-div {
         min-width: 44%;
     }
 }
