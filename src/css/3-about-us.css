@@ -95,7 +95,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .about {
+    .about .container {
         display: flex;
         flex-direction: row;
         align-content: center;
