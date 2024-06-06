@@ -1,12 +1,12 @@
-.aboutus {}
+.about {}
 
-.aboutus-welcome {
+.about-welcome {
     border-radius: 30px;
     background-color: #f3f3f3;
     padding: 40px 20px;
 }
 
-.aboutus-title {
+.about-title {
     font-weight: 600;
     font-size: 48px;
     line-height: 0.91667;
@@ -15,7 +15,7 @@
     margin-bottom: 8px;
 }
 
-.aboutus-text {
+.about-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
@@ -25,7 +25,7 @@
     padding-top: 20px;
 }
 
-.aboutus-btn {
+.about-btn {
     margin-top: 40px;
 
     font-weight: 500;
@@ -45,12 +45,12 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.aboutus-btn:hover,
-.aboutus-btn:focus {
+.about-btn:hover,
+.about-btn:focus {
     background-color: #1f3cd4;
 }
 
-.aboutus-img {
+.about-img {
     background-color: gray;
     border-radius: 30px;
     max-height: 532px;
@@ -60,36 +60,36 @@
 
 
 @media only screen and (min-width: 768px) {
-    .aboutus-welcome {
+    .about-welcome {
         padding: 80px 60px;
     }
 
-    .aboutus-title {
+    .about-title {
         margin-bottom: 20px;
     }
 
-    .aboutus-btn {
+    .about-btn {
         margin-top: 60px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    .aboutus {
+    .about {
         display: flex;
         flex-direction: row;
         align-content: center;
         gap: 40px;
     }
 
-    .aboutus-welcome {
+    .about-welcome {
         /* width: 52%; */
     }
 
-    .aboutus-btn {
+    .about-btn {
         margin-top: 40px;
     }
 
-    .aboutus-img {
+    .about-img {
         min-width: 44%;
     }
 }
