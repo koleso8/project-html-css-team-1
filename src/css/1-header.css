@@ -1,9 +1,16 @@
-.body-prevent-scroll {
-  overflow-y: hidden;
-}
-
 .header {
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: transform 200ms linear;
+  z-index: 5;
+}
+
+.header.hide {
+  transform: translateY(-100%);
 }
 
 .header-container {
@@ -76,7 +83,7 @@
 }
 
 .header-nav-link {
-  padding: 26px 0;
+  padding: 12px 0;
 }
 
 .header-nav-item-active::after {
@@ -267,6 +274,10 @@
 
   .header-nav-item {
     color: var(--main);
+  }
+
+  .header-nav-link {
+    padding: 26px 0;
   }
 
   .header-nav-item-active {
