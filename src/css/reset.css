@@ -6,27 +6,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --main: #0c0c0c;
-  --accent: #3350e9;
-  --background: #fbfbfb;
-  --cards: #f3f3f3;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3,
@@ -62,44 +41,6 @@ button {
 
 img {
   display: block;
-  /* width: 100%; */
   max-width: 100%;
   height: auto;
-}
-
-.body {
-  background-color: var(--background);
-}
-
-.container {
-  width: 100%;
-
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0 auto;
-
-  /* background-color: aqua;
-  height: 20px; */
-}
-
-@media screen and (min-width: 375px) {
-  .container {
-    max-width: 355px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1174px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
 }
