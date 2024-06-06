@@ -78,7 +78,11 @@ margin-top: 30px;
 
 .sale-main-pic {
     display: flex;
-    padding: 80px 112px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 335px;
+        height: 385px;
     border-radius: 30px;
     border: 1px solid rgba(12, 12, 12, 0.05);
     background-color: var(--cards);
@@ -86,17 +90,27 @@ margin-top: 30px;
 
 @media only screen and (min-width: 768px) {
   .sale-main-pic {
+    padding: 80px 112px;
     width: 552px;
     height: 558px;
     border-radius: 50px;
   }
 }
 
+@media only screen and (min-width: 1280px) {
+    .sale-main-pic {
+    width: 428px;
+    height: 558px;
+    padding: 50px;
+    margin-right: 20px;
+
+    }
+}
+
 .sale-description-container {
     border-radius: 30px;
     background-color: var(--accent);
     padding: 48px 28px;
-    min-width: 320px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -106,6 +120,13 @@ margin-top: 30px;
   }
 }
 
+@media only screen and (min-width: 1280px) {
+    .sale-description-container {
+        max-width: 530px;
+        height: 558px;
+    }
+}
+
 .sale-description-title {
 color: var(--background);
     /* Mobile/H3 */
@@ -113,10 +134,17 @@ color: var(--background);
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
-    /*. 116667% */
     letter-spacing: -0.48px;
-    /* max-width: 279px; */
-    /* margin-bottom: 10px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .sale-description-title {
+        /* Desktop_tablet/H3 */
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.64px;
+        max-width: 436px;
+  }
 }
 
 .watch-example {}
@@ -132,6 +160,15 @@ color: var(--background);
         margin-bottom: 20px;
 }
 
+.sale-price {
+display: flex;
+align-items:center;
+
+gap: 9px;
+margin-bottom: 28px;
+
+}
+
 .price-tag {
     border-radius: 8px;
         background-color: rgba(251, 251, 251, 0.10);
@@ -140,19 +177,23 @@ color: var(--background);
         font-style: normal;
         font-weight: 600;
         line-height: 20px;
-        /* 125% */
         letter-spacing: -0.32px;
         width: 68px;
         height: 32px;
-        padding: 8px 12px;
         display: flex;
-        gap: 21px;
-        margin-bottom: 28px;
+        align-items: center;
+        justify-content: center;
 }
 
-.price {}
+@media only screen and (min-width: 768px) {
+  .price-tag {
+    width: 78px;
+        font-size: 20px;
+        letter-spacing: -0.4px;
+  }
+}
 
-.crossed {
+.price-crossed {
     color: rgba(251, 251, 251, 0.50);
         font-family: Gilroy;
         font-size: 12px;
@@ -165,22 +206,21 @@ color: var(--background);
 }
 
 .item-description {
-    color: rgba(251, 251, 251, 0.70);
-        /* Mobile/Main text */
-        font-family: Gilroy;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 18px;
-        /* 128.571% */
-        letter-spacing: -0.28px;
-        /* align-items: center;
-        justify-content: center; */
-        margin-bottom: 28px;
+ margin-bottom: 28px;
 }
 
+  .item-description-text {
+color: rgba(251, 251, 251, 0.70);
+    /* Mobile/Main text */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+  }
+
 @media only screen and (min-width: 768px) {
-  .item-description {
+  .item-description-text {
         /* Desktop_tablet/Main text */
         font-size: 16px;
         line-height: 20px;
@@ -189,10 +229,7 @@ color: var(--background);
 }
 
 .sale-item-features {
-  
-        gap: 4px;
         display: flex;
-         /* width: 279px; */
         align-items: flex-start;
         align-content: flex-start;
         gap: 8px;
@@ -204,12 +241,34 @@ color: var(--background);
         padding: 8px 12px;
         justify-content: center;
         align-items: center;
-    color: var(--background);
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 16px;
-        /* 133.333% */
         border-radius: 8px;
         border: 1px solid rgba(251, 251, 251, 0.20);
+}
+
+.feature-text {
+color: var(--background);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+.feature-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sale-item-features {
+    max-width: 398px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sale-features-item {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
