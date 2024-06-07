@@ -1,17 +1,17 @@
 .contact {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 @media only screen and (min-width: 768px) {
   .contact {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .contact {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -45,16 +45,19 @@
   max-width: 100%;
   min-height: 512px;
   background-color: var(--cards);
+  padding: 48px 28px;
 }
 @media only screen and (min-width: 768px) {
   .contact-modal {
     min-height: 556px;
     border-radius: 50px;
+    padding: 50px 122px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .contact-modal {
     width: 580px;
+    padding: 50px 60px;
   }
 }
 .contact-text {
@@ -63,40 +66,23 @@
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
-  padding-top: 48px;
-  padding-left: 28px;
-  padding-right: 28px;
+  margin-bottom: 28px;
 }
 @media only screen and (min-width: 768px) {
   .contact-text {
-    padding-top: 50px;
-    padding-left: 122px;
-    padding-right: 122px;
     font-size: 16px;
     line-height: 1.25;
   }
 }
-@media only screen and (min-width: 1280px) {
-  .contact-text {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding: 28px;
 }
 @media only screen and (min-width: 768px) {
   .contact-form {
-    padding: 50px 122px;
-    padding-top: 32px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .contact-form {
-    padding: 32px 60px;
+
   }
 }
 
