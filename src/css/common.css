@@ -43,6 +43,10 @@
     height: 20px; */
 }
 
+main {
+  padding-top: 74px;
+}
+
 @media screen and (min-width: 375px) {
   .container {
     max-width: 355px;
@@ -55,6 +59,10 @@
     padding-left: 8px;
     padding-right: 8px;
   }
+
+  main {
+    padding-top: 92px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -62,6 +70,10 @@
     max-width: 1174px;
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  main {
+    padding-top: 88px;
   }
 }
 

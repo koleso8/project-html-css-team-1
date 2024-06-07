@@ -23,7 +23,7 @@ desktop padding:top 50px padding-bottom: 50px) */
   gap: 28px;
 
   background-color: #0c0c0c;
-  background-image: url(../images/advertisement/advertisement.png);
+  background-image: url(../images/advertisement/advertisement.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,6 +45,8 @@ desktop padding:top 50px padding-bottom: 50px) */
   color: var(--background);
   background-color: transparent;
 
+  text-align: center;
+
   width: 160px;
   height: 48px;
   padding: 15px 0;
@@ -65,13 +67,17 @@ desktop padding:top 50px padding-bottom: 50px) */
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .advertisement .container {
-    background-image: url(../images/advertisement/advertisement@2x.png);
+    background-image: url(../images/advertisement/advertisement@2x.webp);
   }
 }
 
 @media screen and (min-width: 768px) {
+  .advertisement {
+    padding: 40px 0;
+  }
+
   .advertisement .container {
-    background-image: url(../images/advertisement/advertisement-tablet.png);
+    background-image: url(../images/advertisement/advertisement-tablet.webp);
     max-width: 704px;
     max-height: 425px;
 
@@ -89,13 +95,17 @@ desktop padding:top 50px padding-bottom: 50px) */
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .advertisement .container {
-    background-image: url(../images/advertisement/advertisement-tablet@2x.png);
+    background-image: url(../images/advertisement/advertisement-tablet@2x.webp);
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .advertisement {
+    padding: 50px 0;
+  }
+
   .advertisement .container {
-    background-image: url(../images/advertisement/advertisement-desktop.png);
+    background-image: url(../images/advertisement/advertisement-desktop.webp);
     max-width: 1150px;
     max-height: 298px;
 
@@ -110,6 +120,6 @@ desktop padding:top 50px padding-bottom: 50px) */
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .advertisement .container {
-    background-image: url(../images/advertisement/advertisement-desktop@2x.png);
+    background-image: url(../images/advertisement/advertisement-desktop@2x.webp);
   }
 }

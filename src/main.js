@@ -123,9 +123,7 @@ const getActiveSection = () => {
   sections.forEach(section => {
     const rect = section.getBoundingClientRect();
     if (rect.top <= offset && rect.bottom >= offset) {
-      if (section.getAttribute('id')) {
-        activeSection = section;
-      }
+      activeSection = section;
     }
   });
   return activeSection;
@@ -143,9 +141,24 @@ const setActiveNavLink = () => {
         link.parentElement.classList.remove('header-nav-item-active');
       }
     });
+  } else {
+    navLinks.forEach(link => {
+      link.parentElement.classList.remove('header-nav-item-active');
+    });
   }
 };
 
 window.addEventListener('DOMContentLoaded', setActiveNavLink);
 window.addEventListener('scroll', setActiveNavLink);
 //
+// catalog
+
+const btnCatalog = document.getElementsByClassName('catalog-btn')[0];
+const imgCatalog5 = document.getElementsByClassName('catalog-item')[4];
+const imgCatalog6 = document.getElementsByClassName('catalog-item')[5];
+
+btnCatalog.addEventListener('click', function (event) {
+  imgCatalog5.classList.remove('catalog-item-hide');
+  imgCatalog6.classList.remove('catalog-item-hide');
+  btnCatalog.classList.add('catalog-btn-none');
+});

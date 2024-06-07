@@ -1,6 +1,6 @@
 .header {
   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,9 +37,9 @@
       rgba(12, 12, 12, 0.92),
       rgba(12, 12, 12, 0.92)
     ),
-    url('../images/header/mob_menu/mobile_menu.jpg');
+    url('../images/header/mob_menu/mobile_menu.webp');
   transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 275ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-open {
@@ -122,7 +122,7 @@
 
 .header-socials-icon {
   fill: rgba(251, 251, 251, 0.8);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 275ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-socials-item:hover .header-socials-icon,
@@ -158,7 +158,7 @@
   border-radius: 3px;
   position: absolute;
   top: 10px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 275ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-burger-span::after {
@@ -170,7 +170,7 @@
   border-radius: 3px;
   position: absolute;
   bottom: 10px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 275ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-burger-open .header-burger-span::before {
@@ -317,7 +317,7 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url('../images/header/mob_menu/mobile_menu@2x.jpg');
+      url('../images/header/mob_menu/mobile_menu@2x.webp');
   }
 }
 @media only screen and (min-width: 768px) {
@@ -326,7 +326,7 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url('../images/header/mob_menu/mobile_menu_tabl.jpg');
+      url('../images/header/mob_menu/mobile_menu_tabl.webp');
   }
 }
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -335,7 +335,7 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url('../images/header/mob_menu/mobile_menu_tabl@2x.jpg');
+      url('../images/header/mob_menu/mobile_menu_tabl@2x.webp');
   }
 }
 
