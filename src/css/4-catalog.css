@@ -21,7 +21,7 @@
 .catalog-item {
     border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 30px;
-    width: 100%;
+    max-width: 100%;
     background: #f3f3f3;
     position: relative;
     padding-top: 42px;
@@ -76,9 +76,7 @@
     width: 160px;
     height: 48px;
     background: #3350e9;
-    margin-top: 40px;
-    margin-right: 87.5px;
-    margin-left: 87.5px;
+    margin: 40px auto;
 
     font-weight: 500;
     font-size: 14px;
@@ -110,6 +108,10 @@
         flex-wrap: wrap;
         width: 100%;
         gap: 32px 16px;
+    }
+
+    .catalog-item {
+        max-width: 344px;
     }
 
     .catalog-title {
@@ -151,7 +153,6 @@
     .catalog-item-hide {
         display: block;
     }
-
 }
 
 @media screen and (min-width: 1280px) {
@@ -166,7 +167,12 @@
     }
 
     .catalog-item {
+        max-width: 344px;
         padding-top: 34px;
         width: calc((100% - 32px) / 3);
+    }
+
+    .catalog-list {
+        gap: 32px 23px;
     }
 }
