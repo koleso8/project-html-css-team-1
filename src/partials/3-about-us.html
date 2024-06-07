@@ -1,3 +1,55 @@
-<section class="about">
-  <div class="container"></div>
+<section class="about section-animation" id="about">
+  <div class="container">
+    <div class="about-welcome">
+      <h2 class="about-title">About Us</h2>
+      <p class="about-text">
+        Welcome to our premium watch collection, where luxury and style meet
+        functionality and precision. Our selection of timepieces embodies the
+        very best in Swiss craftsmanship and engineering, ensuring that you'll
+        always have a reliable and stylish accessory on your wrist.
+      </p>
+      <p class="about-text">
+        At our premium watch collection, we believe that a watch is more than
+        just a timekeeping device &mdash; it's a statement piece that reflects
+        your personality and style. So why settle for anything less than the
+        best?
+      </p>
+      <a class="about-btn" href="#catalog">View catalog</a>
+    </div>
+    <div class="about-img-div">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/abt-us/abt_us_desktop.webp    1x,
+            ./images/abt-us/abt_us_desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/abt-us/abt_us_tablet.webp    1x,
+            ./images/abt-us/abt_us_tablet@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images//abt-us/abt_us.webp   1x,
+            ./images/abt-us/abt_us@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img
+          src="./images/abt-us/abt_us.webp"
+          alt="team"
+          width="108"
+          height="44"
+          class="about-img"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
