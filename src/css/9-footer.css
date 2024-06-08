@@ -1,6 +1,7 @@
 /* #region Footer */
 .footer {
   padding: 0 10px;
+  margin-bottom: 20px;
 }
 .footer .container {
   max-width: 335px;
@@ -43,7 +44,7 @@
 }
 .footer-tel-cont {
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 37.98px;
   border-radius: 16px;
   border: 1px solid rgba(251, 251, 251, 0.2);
   padding: 14px 20px;
@@ -146,6 +147,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    margin-bottom: 32px;
+  }
   .footer .container {
     max-width: 704px;
     padding-top: 40px;
@@ -182,6 +186,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100;
+    /* margin: 0; */
   }
   .footer-text {
     font-size: 28px;
@@ -212,6 +217,10 @@
     line-height: 1.29;
     max-width: 162px;
   }
+  .underline {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
   .footer-bt-date {
     font-size: 14px;
     line-height: 1.28;
@@ -240,6 +249,9 @@
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+  .footer-tel-cont {
+    margin-bottom: 45.98px;
   }
   .footer-text {
     font-size: 28px;
