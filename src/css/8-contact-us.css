@@ -103,6 +103,7 @@
 
 .contact-input-field:focus {
   border-color: var(--accent);
+  outline: none;
 }
 .contact-input-field:hover {
   border-color: var(--accent);
@@ -153,6 +154,13 @@ textarea {
   resize: none;
   transition: border-color 275ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.contact-comment-input:hover,
+.contact-comment-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
 @media only screen and (min-width: 768px) {
   .contact-comment-input {
     padding: 16px 18px 16px 18px;
