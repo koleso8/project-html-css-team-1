@@ -1,104 +1,106 @@
 <section class="contact section-animation" id="contact-us">
   <div class="container contact-container">
-    <div class="contact-info">
-      <h2 class="contact-title">Contact Us</h2>
-      <div class="contact-modal">
-        <p class="contact-text">
-          Please use the form below to contact us. Enter your name, email,
-          phone, and message and we'll get back to you shortly.
-        </p>
-        <form class="contact-form">
-          <div class="contact-input-container">
-            <input
-              class="contact-input-field"
-              type="text"
-              id="user-name"
-              name="user-name"
-              placeholder="Name"
-              required
-              aria-label="input field name"
-            />
-          </div>
-          <div class="contact-input-container">
-            <input
-              class="contact-input-field"
-              type="email"
-              id="user-email"
-              name="user-email"
-              placeholder="Email"
-              required
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              aria-label="input field email"
-            />
-          </div>
-          <div class="contact-input-container">
-            <input
-              class="contact-input-field"
-              type="tel"
-              id="user-tel"
-              name="user-tel"
-              placeholder="+380"
-              required
-              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-              aria-label="input field telephone"
-              title=" +380-XX-XXX-XX-XX"
-            />
-          </div>
-          <div class="contact-input-container">
-            <textarea
-              name="user-comment"
-              id="user-comment"
-              rows="4"
-              class="contact-comment-input"
-              placeholder="Comment"
-              required
-              aria-label="input field comment"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            aria-label="send button"
-            class="contact-modal-button"
-          >
-            Send
-          </button>
-        </form>
+    <h2 class="contact-title">Contact Us</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-modal">
+          <p class="contact-text">
+            Please use the form below to contact us. Enter your name, email,
+            phone, and message and we'll get back to you shortly.
+          </p>
+          <form class="contact-form">
+            <div class="contact-input-container">
+              <input
+                class="contact-input-field"
+                type="text"
+                id="user-name"
+                name="user-name"
+                placeholder="Name"
+                required
+                aria-label="input field name"
+              />
+            </div>
+            <div class="contact-input-container">
+              <input
+                class="contact-input-field"
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="Email"
+                required
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                aria-label="input field email"
+              />
+            </div>
+            <div class="contact-input-container">
+              <input
+                class="contact-input-field"
+                type="tel"
+                id="user-tel"
+                name="user-tel"
+                placeholder="+380"
+                required
+                pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                aria-label="input field telephone"
+                title=" +380-XX-XXX-XX-XX"
+              />
+            </div>
+            <div class="contact-input-container">
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                rows="4"
+                class="contact-comment-input"
+                placeholder="Comment"
+                required
+                aria-label="input field comment"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              aria-label="send button"
+              class="contact-modal-button"
+            >
+              Send
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="contact-picture">
-      <picture>
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            ./images/contact-us/contact-us-clock-desktop.webp    1x,
-            ./images/contact-us/contact-us-clock-desktop@2x.webp 2x
-          "
-          type="image/jpg"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/contact-us/contact-us-clock-tablet.webp    1x,
-            ./images/contact-us/contact-us-clock-tablet@2x.webp 2x
-          "
-          type="image/jpg"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/contact-us/contact-us-clock.webp    1x,
-            ./images/contact-us/contact-us-clock@2x.webp 2x
-          "
-          type="image/jpg"
-        />
-        <img
-          src="./images/contact-us/contact-us-clock.webp"
-          alt="watches"
-          width="335"
-          height="446"
-          class="contact-us-watches-img"
-        />
-      </picture>
+      <div class="contact-picture">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/contact-us/contact-us-clock-desktop.webp    1x,
+              ./images/contact-us/contact-us-clock-desktop@2x.webp 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/contact-us/contact-us-clock-tablet.webp    1x,
+              ./images/contact-us/contact-us-clock-tablet@2x.webp 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/contact-us/contact-us-clock.webp    1x,
+              ./images/contact-us/contact-us-clock@2x.webp 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            src="./images/contact-us/contact-us-clock.webp"
+            alt="watches"
+            width="335"
+            height="446"
+            class="contact-us-watches-img"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>
