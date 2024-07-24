@@ -39,8 +39,8 @@
   padding-right: 10px;
   margin: 0 auto;
 
-  /* background-color: aqua;
-    height: 20px; */
+  background-color: aqua;
+  height: 20px;
 }
 
 main {
@@ -75,8 +75,4 @@ main {
   main {
     padding-top: 88px;
   }
-}
-
-.body {
-  background-color: var(--background);
 }
